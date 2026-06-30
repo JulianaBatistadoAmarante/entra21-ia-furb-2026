@@ -1,0 +1,20 @@
+1 - O que é o Docker e qual problema ele resolve na implantação de software?
+R: O Docker é uma plataforma que utiliza containers para empacotar aplicações com todas as suas dependências, garantindo que elas sejam executadas da mesma forma em qualquer ambiente. Seu principal objetivo é eliminar problemas de incompatibilidade entre desenvolvimento, testes e produção, proporcionando portabilidade, isolamento, padronização e maior facilidade na implantação de software.
+
+2 - Qual a diferença entre uma imagem e um container?
+R: Uma imagem é um modelo imutável que contém a aplicação e todas as suas dependências. Um container é uma instância dessa imagem em execução, capaz de executar processos e utilizar recursos do sistema. Em outras palavras, a imagem é o modelo; o container é a aplicação funcionando.
+
+3 - O que significa fazer o "bind" de portas ao rodar um container Docker?
+R:O bind de portas é o processo de mapear uma porta do computador hospedeiro para uma porta do container Docker, permitindo que serviços executados dentro do container sejam acessados externamente. Esse mecanismo possibilita a comunicação entre aplicações que estão dentro do container e usuários ou programas que estão fora dele.
+
+4 - Para que servem variáveis de ambiente em containers Docker?
+R:  As variáveis de ambiente são utilizadas para configurar aplicações dentro de containers Docker durante sua inicialização. Elas permitem definir informações como senhas, usuários, bancos de dados e outras configurações sem alterar a imagem do container, proporcionando maior flexibilidade, reutilização e facilidade na implantação de aplicações.
+
+5 - Em quais tipos de projetos você usaria o Docker?
+R: O Docker é utilizado em projetos de aplicações web, bancos de dados, microsserviços, Inteligência Artificial, Ciência de Dados, computação em nuvem e pipelines de CI/CD. Sua principal função é padronizar o ambiente de execução, garantindo portabilidade, isolamento, escalabilidade e facilidade na implantação de aplicações em diferentes ambientes.
+
+6 - Por que devemos analisar a seção de "Tags" no Docker Hub antes de escolher uma imagem?
+R: A seção de Tags do Docker Hub deve ser analisada porque identifica as diferentes versões de uma imagem Docker. Escolher uma tag específica garante maior estabilidade, compatibilidade e reprodutibilidade da aplicação, evitando problemas causados por atualizações automáticas da versão latest
+
+7 - Se você tivesse que convencer um time de desenvolvedores a usar Docker em um projeto novo, o que você diria?
+R: Eu defenderia o uso do Docker porque ele padroniza o ambiente de desenvolvimento, elimina problemas de compatibilidade entre máquinas, facilita a implantação, melhora a colaboração da equipe, isola aplicações, permite maior escalabilidade e integra-se facilmente a práticas de DevOps. Dessa forma, o desenvolvimento torna-se mais eficiente, seguro e previsível.
