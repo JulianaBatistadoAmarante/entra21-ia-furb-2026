@@ -1,0 +1,67 @@
+**Compreendendo Dockerfile **
+Um Dockerfile é um arquivo de texto que contém instruções para construir uma imagem Docker. Cada instrução descreve uma etapa no processo de criação da imagem, como instalar programas, copiar arquivos ou definir variáveis de ambiente.
+
+Com base nisso, responda às perguntas a seguir, sinta-se livre para pesquisar na internet:
+
+Imagem vs Container:
+
+Qual é a diferença entre uma imagem e um container? Como o Dockerfile se encaixa nisso?
+
+Uma imagem Docker é um modelo pronto, que contém tudo o que uma aplicação precisa para funcionar: sistema operacional, bibliotecas, dependências e o código da aplicação. Ela é imutável, ou seja, depois de criada não sofre alterações.
+
+Um container é uma instância em execução de uma imagem. Quando executamos uma imagem, o Docker cria um container. É possível criar vários containers a partir da mesma imagem.
+
+O Dockerfile é o arquivo que contém as instruções para criar a imagem.
+
+Instruções Comuns:
+
+Imagine que você tenha um Dockerfile com instruções como FROM, COPY e ENTRYPOINT.
+
+Para cada uma dessas instruções, descreva brevemente o que ela faz e dê um exemplo de situação em que seria usada.
+
+FROM = Define qual imagem será utilizada como base para construir a nova imagem.
+
+COPY = Copia arquivos da máquina para dentro da imagem.
+
+ENTRYPOINT = Define qual programa será executado automaticamente quando o container iniciar.
+
+CMD vs ENTRYPOINT:
+
+Qual a diferença entre o comando CMD e ENTRYPOINT? Como que eles poderiam ser usados nos exemplos de Dockerfiles passados em aula.
+
+ENTRYPOINT define qual programa sempre será executado. Use ENTRYPOINT quando:
+
+existe um programa principal que sempre deve ser executado; você quer impedir que ele seja trocado acidentalmente.
+
+CMD define os argumentos ou o comando padrão, que pode ser substituído facilmente.Use CMD quando:
+
+deseja fornecer um comando padrão;
+
+quer permitir que o usuário o substitua facilmente;
+
+o comando pode variar.
+
+Camadas:
+
+Um Dockerfile é construído em camadas. Explique o que essas camadas significam.
+
+As camadas (layers) são uma das principais características do Docker. Cada instrução de um Dockerfile cria uma nova camada sobre a anterior, formando a imagem final.
+
+Imagine a construção de uma casa 🏠:
+
+Primeiro é feita a fundação.
+
+Depois são levantadas as paredes.
+
+Em seguida é colocado o telhado.
+
+Por último vêm a pintura e os acabamentos.
+
+Cada etapa depende da anterior. No Docker acontece algo semelhante: cada instrução adiciona uma nova camada à imagem.
+
+Criação de um Dockerfile:
+
+A partir de um projeto pessoal, containerize sua aplicação criando um Dockerfile que permita construir uma imagem e executar seu projeto em um container. Após isso, faça o upload da sua imagem para o seu Docker Hub
+
+https://hub.docker.com/r/julbatista/tarefa
+
